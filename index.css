@@ -1,0 +1,322 @@
+html {
+    background-image: url("images/nightskybg.jpg");
+    background-position: bottom;
+    background-size: 90%;
+    background-attachment: fixed;
+}
+
+p {
+    text-align: justify;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: rgb(198, 198, 198);
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+.header {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+    width: 100%;
+    padding:;
+    top: 0;
+    left: 0;
+    border-radius: 2%;
+    background-color: red;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: #292929
+}
+
+.header h1 {
+    margin-left: 5%;
+}
+
+.header ul li {
+    display: inline-block;
+    float: right;
+    margin-right: 2em;
+    vertical-align: middle;
+}
+
+.nav {
+    position: relative;
+    left: 2em;
+    top: 1em;
+    bottom: 0;
+    width: 1em;
+    height: 15em;
+    background-color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+
+.nav ul li {
+    display: block;
+    float: left;
+    padding: 1em;
+}
+
+.nav, .main div, .blackBox, .galleryBoxes {
+    border-radius: 4%;
+}
+
+
+.nav li {
+    margin-left: -2em;
+}
+
+/*add value to make current page in nav bold*/
+.currentPage {
+    font-weight:200;
+}
+
+.anchorBuffer {
+    height: 12em;
+    width: 40em;
+    display:inline-block;
+    position:relative;
+    margin-top: 0em;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+h1, h2, a {
+    font-family: sans-serif;
+}
+
+#main-image {
+    min-height: 500px;
+    margin-top: 100px;
+    background: rgba(240, 240, 240, 0.58);
+    width: 100%;
+    left: 0;
+    top: 1em;
+    position: fixed;
+    overflow: hidden;
+}
+#main-image, .header, .nav, .main div {
+    box-shadow: 0em 0.2em rgb(136, 136, 136);
+}
+
+#main-image h1 {
+    border: 0.25em solid white;
+    width: 450px;
+    text-align: center;
+    padding: 0.2em;
+}
+
+/*heading image for the rest of the pages*/
+#main-image-none {
+    min-height: 500px;
+    margin-top: 100px;
+    background: none;
+    width: 100%;
+    left: 0;
+    top: 1em;
+    position: fixed;
+    overflow: hidden;
+}
+
+#tagline {
+    display: inline-block;
+    align-content: center;
+    position: relative;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+/** I can't get this to center and
+dont know which of these im supposed
+to use or if I need this id at all.
+
+#tagline {
+    position: relative;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;   
+} **/
+
+.main {
+    background-color: none;
+    position: relative;
+    padding: 2em;
+    margin: 11em 7em 7em 9em;
+    border-radius: 2%;
+    max-width: 30em;
+    min-width: 20em;
+    overflow: scroll;
+}
+
+.preview {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 2em 2em;
+    margin-bottom: 0em;
+    height: 15em;
+    max-width: 30em;
+    overflow: scroll;
+}
+
+
+/** I feel like I'm getting close here
+I probably just need to pad it
+but I dunno
+#aboutBlock {
+    margin-top: 200em;
+    position: absolute;
+}
+**/
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+/*bottom margin not showing up*/
+.blackBox {
+    position: fixed;
+    margin-top: 10em;
+    margin-bottom: auto;
+    margin-left: 12em;
+    background-color: rgb(41, 41, 41);
+    padding: 1em 3em 3em;
+    min-width: 20em;
+    min-height: 20em;
+    max-height: 50em;
+    max-width: 30em;
+    color: rgb(206, 206, 206);
+    overflow: scroll;
+}
+
+table {
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+th, td {
+    padding: 0.5em;
+}
+
+/*portfolio*/
+
+.galleryBoxes p {
+    width: 100%;
+}
+
+.gallery {
+    clear: right;
+    margin-top: 10em;
+    margin-bottom: auto;
+    margin-left: 10em;
+    
+}
+.galleryBoxes {
+    background-color: rgb(77, 77, 77);
+    padding: 0.5em 0.5em 0.5em;
+    margin: 0.5em;
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    overflow: scroll;
+    border: 0.5em solid rgb(77, 77, 77);
+}
+
+.galleryBoxes h3 {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.galleryBoxes img {
+    height: 5em;
+    width: 100%;
+    height: 50%;
+}
+
+/*Contact*/
+input[type=text] {
+    font-size: 10pt;
+    padding: 0.5em;
+    background: rgb(204, 204, 204);
+    border: 0 none;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    font-size: 10pt;
+    padding: 0.5em 2em;
+    margin-top: 0.8em;
+    background: rgb(204, 204, 204);
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    clear: left;
+}
+
+#commentbox {
+    width:inherit;
+    height: 10em;
+    box-sizing: border-box;
+    text-align: top;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+input[type=text], input[type=submit], #commentbox {
+    border-radius: 0.2em;
+}
+
+
+
+/*mobile*/
+.topnav {
+    display: none;
+}
+
+@media (max-width: 800px) {
+        .galleryBoxes {
+        width: 5em;
+        height: 5em;    
+            }
+}
+
+
+@media (max-width: 400px) {
+        .galleryBoxes {
+        width: 5em;
+        height: 5em;
+        overflow:hidden;    
+        
+            }
+    .nav, .galleryBoxes p, .galleryBoxes img {
+        display: none;
+            }
+    
+    .topnav {
+        display: block;
+    }
+        
+    }
+
+/*ASK ABOUT THIS*/
+
+    .galleryBoxes h3, .galleryBoxes p {
+         
+            font-size: 9vw;
+            padding: 0em;
+            margin: 0;
+        }
+    
+    }
+    }
